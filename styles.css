@@ -1,0 +1,37 @@
+
+img{
+    width: 100%;
+    
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+.parent{
+    display: grid;
+    grid-gap: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .parent{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+@media screen and (min-width:1024px){
+    .parent{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .two{
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+   .nine{
+    grid-row: span 2;
+   }
+    
+}
